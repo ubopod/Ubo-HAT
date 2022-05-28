@@ -10,30 +10,39 @@ The main objective in designing Ubo was centred around improving developer and e
 In the following section, we discuss how each sub-system was chosen to enhance user and developer experience as well as technical details of implementation.  
 
 ## Sub-systems
+In this section, we discuss each sub-system function, their purpose, and corresponing design decisions.
 
-- Display
+### Display
 OLED versus TFT (OLED more cost effective but color depth)
 Touch versus non-touch
 Display size (0.54 inch in early prototypes) large rough to display essential information, QR code, etc
 Cost
-
 Decision
 
-- 7 buttons
-
+### keypad
+7 buttons
 5-way navigation switch, tedious experience and 
 Menu system 
 
+### LED ring
 - Ring of 27 RGB LEDS arranged on the edge of the PCB
 
 Communicate key informationa and notification silently from a distance 
 
+### Infrared
 - 4 IR Transmitters 
 - 1 IR Receiver for code learning
-- Temperature sensor
-- Light sensor
+### Temperature sensor
+### Light sensor
+### Audio
 - Stereo Audio In/Out (2 microphones and 2 speakers)
-- EEPROM chip for automatic device tree population
+### EEPROM 
+- chip for automatic device tree population
+### Security 
+securely storing private keys
+performing necessary crypo operations
+license management for propritery software, secure wallets, etc
+### Radio
 - Optional Radio module
 - Experimental features (Software defined radio)
 
